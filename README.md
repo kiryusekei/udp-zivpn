@@ -44,12 +44,6 @@ apt update -y && wget -q https://raw.githubusercontent.com/arivpnstores/udp-zivp
 | **ARM 32-bit** | udp-zivpn-linux-arm |
 | **ARM 64-bit (ARMv8)** | udp-zivpn-linux-arm64 |
 
-Binary direct download location:
-
-```
-https://github.com/arivpnstores/udp-zivpn/releases/download/zahidbd2/
-```
-
 ---
 
 ## 📡 Default Configuration
