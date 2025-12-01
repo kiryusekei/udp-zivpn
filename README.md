@@ -1,22 +1,81 @@
-![](https://github.com/powermx/dl/blob/master/zivpn.png)
+<p align="center">
+  <img src="https://github.com/powermx/dl/blob/master/zivpn.png" width="420">
+</p>
 
-UDP server installation for ZIVPN Tunnel (SSH/DNS) VPN app.
-<br>
+<h1 align="center">🚀 ZiVPN UDP Server</h1>
 
->Server binary for Linux amd64 and arm.
+UDP server installation for **ZiVPN Tunnel (SSH / DNS / UDP)** VPN application.
 
-#### Instalation Menu
+Server binary available for **Linux amd64**, **arm**, and **arm64** with automatic architecture detection.
+
+---
+
+## 🧠 Features
+- Auto detect VPS architecture (amd64 / arm / arm64)
+- Auto download & install latest UDP binary
+- Auto setup Systemd service
+- Auto configure UFW firewall
+- Auto apply default \"zi\" config
+- Support for Debian / Ubuntu (minimal OS)
+
+---
+
+## 📦 Installation Menu
 
 ```
-apt update -y && apt install screen ruby lolcat curl wget python3-pip -y && wget -q https://raw.githubusercontent.com/arivpnstores/udp-zivpn/main/install.sh -O /usr/bin/menu-zivpn && chmod +x /usr/bin/menu-zivpn && screen -S ari /usr/bin/menu-zivpn
+apt update -y && apt install screen ufw ruby lolcat curl wget python3-pip -y && wget -q https://raw.githubusercontent.com/arivpnstores/udp-zivpn/main/install.sh -O /usr/bin/menu-zivpn && chmod +x /usr/bin/menu-zivpn && /usr/bin/menu-zivpn
 ```
-#### Uninstal Menu
+
+---
+
+## 🧼 Uninstall Menu
 
 ```
-apt update -y && wget -q https://raw.githubusercontent.com/arivpnstores/udp-zivpn/main/uninstall.sh -O /usr/bin/uninstall-zivpn && chmod +x /usr/bin/uninstall-zivpn && screen -S ari /usr/bin/uninstall-zivpn
+apt update -y && wget -q https://raw.githubusercontent.com/arivpnstores/udp-zivpn/main/uninstall.sh -O /usr/bin/uninstall-zivpn && chmod +x /usr/bin/uninstall-zivpn && /usr/bin/uninstall-zivpn
 ```
-Client App available:
 
-<a href="https://play.google.com/store/apps/details?id=com.zi.zivpn" target="_blank" rel="noreferrer">Download APP on Playstore</a>
-> ZiVPN
-                
+---
+
+## 🖥 Supported Architecture
+
+| Architecture | Binary |
+|-------------|--------|
+| **x86_64 (AMD64)** | udp-zivpn-linux-amd64 |
+| **ARM 32-bit** | udp-zivpn-linux-arm |
+| **ARM 64-bit (ARMv8)** | udp-zivpn-linux-arm64 |
+
+Binary direct download location:
+
+```
+https://github.com/arivpnstores/udp-zivpn/releases/download/zahidbd2/
+```
+
+---
+
+## 📡 Default Configuration
+
+| Setting | Value |
+|---------|-------|
+| Default Password | `zi` |
+| Service Name | `zivpn.service` |
+| Config File | `/etc/zivpn/config.json` |
+| Binary Path | `/usr/local/bin/zivpn` |
+
+---
+
+## 📱 Client Application
+
+| Platform | Link |
+|----------|------|
+| Android | https://play.google.com/store/apps/details?id=com.zi.zivpn |
+
+> App: **ZiVPN Tunnel**
+
+---
+
+## 📞 Support
+For custom build, business inquiry, reseller system, panel, or telegram bot please contact support.
+
+---
+
+### 🎉 Thank you for using **ZiVPN UDP Server**
