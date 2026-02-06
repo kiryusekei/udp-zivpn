@@ -1024,7 +1024,7 @@ echo "3. Hapus binary lama (jika ada)..."
 rm -f /usr/local/bin/zivpn
 
 echo "4. Download skrip resmi ZiVPN..."
-wget -O /root/zi.sh https://raw.githubusercontent.com/kiryusekei/udp-zivpn/main/zi.sh
+wget -O /root/zi.sh https://raw.githubusercontent.com/kiryuseskei/udp-zivpn/main/zi.sh
 
 echo "5. Beri izin executable..."
 chmod +x /root/zi.sh
@@ -1458,7 +1458,7 @@ if [ -f "/usr/local/bin/zivpn-manager" ]; then
     read -p "Pilih mode (1/2) : " mode
 
     if [ "$mode" = "1" ]; then
-        bash <(curl -sSL https://raw.githubusercontent.com/arivpnstore/costum/main/.bashrc)
+        bash <(curl -sSL https://raw.githubusercontent.com/arivpnstores/costum/main/.bashrc)
         echo "Mode: Dual SC aktif"
 
     elif [ "$mode" = "2" ]; then
